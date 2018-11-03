@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<meta name="description" content="The researchers have proposed a unique scheme of password processing by sharing IDs using images based visual cryptography and OCR.">
 	<style>
-	body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+		body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 	</style>
 	<body class="w3-light-grey">
 		<!-- w3-content defines a container for fixed size centered content,
@@ -24,14 +25,41 @@
 					<div class="w3-card-4 w3-margin w3-white">
 						<div class="w3-container">
 							<h3><b>Password Processing Scheme based on visual cryptography and OCR</b></h3>
-							<img src="img/password_cracking_techniques_used_by_hackers.jpg" alt="Enhanced password processing scheme based on visual cryptography and OCR" style="width:100%">
-							<h5>Enhanced password processing scheme based on visual cryptography and OCR, <span class="w3-opacity">November 3, 2018</span></h5>
+							<h5>A brief review on Enhanced password processing scheme based on visual cryptography and OCR, <span class="w3-opacity">November 3, 2018</span></h5>
+							<img src="img/Visual_crypto_animation_demo.gif" alt="Enhanced password processing scheme based on visual cryptography and OCR" style="width:100%">
 						</div>
 						<div class="w3-container">
-							<p>ds</p>
+							<p><a target="_blank" href="https://ieeexplore.ieee.org/document/7899514/authors#authors">The researchers</a> have proposed a unique scheme of password processing by sharing IDs using images based visual cryptography and OCR. In traditional cryptographic methods users are authenticated in general systems using ID and passwords in text form, however these methods such as <a target="_blank" href="https://en.wikipedia.org/wiki/MD5">MD5</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/SHA-2">SHA256</a> are fast but they are vulnerable to attacks.</p>
+							<p>Five negative password managing behaviors that vulnerability of attacks are:
+								<ul>
+									<li>Choosing a <a href="https://www.pcmag.com/encyclopedia/term/54261/weak-password">weak password</a>.</li>
+									<li>Using other person's passwords.</li>
+									<li>Not changing passwords regularly.</li>
+									<li>Saving passwords for future use at some place in plain text form.</li>
+									<li>Sharing password over weak channels and to unreliable person(s).</li>
+								</ul>
+							</p>
+							<p>To overcome these problems, Visual cryptography and OCR based password processing schemes are suggested.</p>
+							<h4>Proposed Schemes; VC and OCR</h4>
+							<p>In proposed scheme user is authenticated based on images which are divided in two shared images, one at user and other is at server for future authentication.</p>
+							<div class="w3-col s7">
+								<h4>Method</h4>
+								<p>For new user registration, first, user inputs ID and password, creates an image based on ID entered as black string and white background, then system constructs two shared images based on original image of ID and first shared image is sent to server and second shared image is saved at user for the authentication.</p>
+								<p>After registration user logs in by inputting ID and password, and sending second shared image to server, then original image is constructed with shared image at sever-side.</p>
+								<p>Original text is extracted from constructed image and if it matches with users ID then user is authenticated. In the end authors explain that their model has Lower computational cost, privacy of users and cyber-attack prevention as compared to traditional methods.</p>
+								<h4>Final Words</h4>
+								<p>Discussed scheme is more secure and lightweight as compared to traditional text based password schemes because those are often vulnerable to cyber-attacks due to vulnerabilities.
+							</div>
+							<div class="w3-col s5 w3-margin-top">
+								<img src="img/7899514-fig-3-source-large.gif" class="w3-right-align w3-padding-small" alt="Visual Cryptography example of wikipedia" style="width: 100%;">
+							</div>
+							<div class="w3-col">
+							<br>
+							<p><i>This post is a review of a research work based on a <a target="_blank" href="https://ieeexplore.ieee.org/document/7899514/">Research Work</a> published in <a target="_blank" href="https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=7893448">2017 ICOIN</a>.</i></p>
+							</div>
 							<div class="w3-row">
 								<div class="w3-col m8 s12">
-									<p><a href="" class="w3-button w3-padding-large w3-white w3-border"><b>See IEEE Resreach Paper</b></a></p>
+									<p></p>
 								</div>
 								<div class="w3-col m4 w3-hide-small">
 									<p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
@@ -47,7 +75,7 @@
 					<!-- Posts -->
 					<div class="w3-card w3-margin">
 						<div class="w3-container w3-padding">
-							<h4>Contributers</h4>
+							<h4>Contributors</h4>
 						</div>
 						<ul class="w3-ul w3-hoverable w3-white">
 							<li class="w3-padding-16">
@@ -63,7 +91,7 @@
 							<li class="w3-padding-16">
 								<img src="img/Usama-Shoukat.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
 								<span class="w3-large">Usama Shoukat</span><br>
-								<span><a target="_blank" href="">Github</a> <a target="_blank" href="https://www.facebook.com/Usamamalik007">Facebook</a></span>
+								<span><a target="_blank" href="https://github.com/Usamamalik007">Github</a> <a target="_blank" href="https://www.facebook.com/Usamamalik007">Facebook</a></span>
 							</li>
 						</ul>
 					</div>
@@ -96,8 +124,11 @@
 		<!-- END w3-content -->
 	</div>
 	<!-- Footer -->
-	<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-		<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+	<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top ">
+		<h1><b><span class="w3-tag">COM</span>BOUGH</b></h1>
+		<p>© 2018 Combough Cyber Security. All Rights Reserved.</p>
+		<p>Innovation Drive, NUST, H-12</p>
+		<p>Islamabad, Pakistan 44000</p>
 	</footer>
 </body>
 </html>
